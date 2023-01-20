@@ -13,6 +13,21 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :postal_code %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.number_field :postal_code, autocomplete: "postal_code" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.text_field :address, autocomplete: "address" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profile %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.text_area :profile, autocomplete: "profile" %>
+  </div>
+
+  <div class="field">
     <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
     <% if @minimum_password_length %>
@@ -29,21 +44,6 @@
   <div class="field">
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "current-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :postal_code %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.number_field :postal_code, autocomplete: "postal_code" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :address %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.text_field :address, autocomplete: "address" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :profile %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.text_area :profile, autocomplete: "profile" %>
   </div>
 
   <div class="actions">
