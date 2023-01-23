@@ -188,3 +188,8 @@ ja:
     new: 新規作成
     back: 戻る
     delete_confirm: 削除しますか？
+  controllers:
+    common:
+      notice_create: "%{name}が作成されました。"
+      notice_update: "%{name}が更新されました。"
+      notice_destroy: "%{name}が削除されました。"
