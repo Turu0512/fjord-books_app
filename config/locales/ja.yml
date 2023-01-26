@@ -220,6 +220,9 @@ ja:
       minimum_length: "%{length}文字以上"
       following_list: フォロー一覧
       followers_list: フォロワー一覧
+      following: フォロー
+      followers: フォロワー
+      unfollow: フォロー解除
     pagination:
       first: '最初'
       last: '最後'
