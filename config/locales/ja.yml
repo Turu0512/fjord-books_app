@@ -194,8 +194,5 @@ ja:
       notice_update: "%{name}が更新されました。"
       notice_destroy: "%{name}が削除されました。"
   book:
-    new_book: 新規作成
-    edit_book: 詳細編集
-    success: 登録しました
-    update: 更新しました
-    delete: 削除しました
+    new_book: "%{name}の新規作成"
+    edit_book: "%{name}の編集"
