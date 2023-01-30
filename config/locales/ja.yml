@@ -188,11 +188,12 @@ ja:
     new: 新規作成
     back: 戻る
     delete_confirm: 削除しますか？
+    common:
+      new_book: "%{name}の新規作成"
+      edit_book: "%{name}の編集"
   controllers:
     common:
       notice_create: "%{name}が作成されました。"
       notice_update: "%{name}が更新されました。"
       notice_destroy: "%{name}が削除されました。"
-  book:
-    new_book: "%{name}の新規作成"
-    edit_book: "%{name}の編集"
+
