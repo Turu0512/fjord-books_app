@@ -1,4 +1,4 @@
-<h1><%= @user.email %>のユーザーページ</h1>
+<h1><%= (t 'users.index.users_page', name: @user.email) %></h1>
 <p>
   <strong><%= User.human_attribute_name(:email) %>:</strong>
   <%= @user.email %>

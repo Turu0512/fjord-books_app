@@ -12,12 +12,12 @@
   <body>
   <p class="navbar-text pull-right">
   <% if user_signed_in? %>
-    <%= User.human_attribute_name(:sign_in_as) %> <strong><%= current_user.email %></strong>.
-    <%= link_to User.human_attribute_name(:edit_profile), edit_user_registration_path, class: 'navbar-link' %> |
-    <%= link_to User.human_attribute_name(:logout), destroy_user_session_path, method: :delete, class: 'navbar-link' %>
+    <%= t('users.index.sign_in_as') %> <strong><%= current_user.email %></strong>.
+    <%= link_to t('users.index.edit_profile'), edit_user_registration_path, class: 'navbar-link' %> |
+    <%= link_to t('views.common.logout'), destroy_user_session_path, method: :delete, class: 'navbar-link' %>
   <% else %>
-    <%= link_to User.human_attribute_name(:sign_up), new_user_registration_path, class: 'navbar-link' %> |
-    <%= link_to User.human_attribute_name(:login), new_user_session_path, class: 'navbar-link' %>
+    <%= link_to t('views.common.sign_up'), new_user_registration_path, class: 'navbar-link' %> |
+    <%= link_to t('views.common.login'), new_user_session_path, class: 'navbar-link' %>
   <% end %>
   </p>
   <% if notice %>

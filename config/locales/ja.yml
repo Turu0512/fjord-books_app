@@ -192,6 +192,9 @@ ja:
       delete_confirm: よろしいですか？
       title_new: "%{name}の新規作成"
       title_edit: "%{name}の編集"
+      login: ログイン
+      logout: ログアウト
+      sign_up: アカウント登録
     pagination:
       first: "最初"
       last: "最後"
@@ -206,3 +209,9 @@ ja:
       notice_create: "%{name}を作成しました"
       notice_update: "%{name}を編集しました"
       notice_destroy: "%{name}を削除しました"
+  users:
+    index:
+      edit_profile: プロフィール編集
+      user_list: ユーザーリスト
+      users_page: "%{name}の詳細"
+      sign_in_as: ログインユーザー

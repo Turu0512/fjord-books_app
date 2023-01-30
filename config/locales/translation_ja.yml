@@ -18,10 +18,3 @@ ja:
         remember_created_at: ログイン記憶時刻  #g
         reset_password_sent_at: パスワードリセット送信時刻  #g
         reset_password_token: パスワードリセット用トークン  #g
-        sign_in_as: ログインユーザー
-        edit_profile: プロフィール編集
-        logout: ログアウト
-        user_list: ユーザーリスト
-        forgot_password: パスワードをお忘れですか？
-        login: ログイン
-        sign_up: アカウント登録
