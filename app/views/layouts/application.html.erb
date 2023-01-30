@@ -10,7 +10,7 @@
   </head>
 
   <body>
-  <p class="navbar-text pull-right">
+    <p class="navbar-text pull-right">
   <% if user_signed_in? %>
     <%= t('users.index.sign_in_as') %> <strong><%= current_user.email %></strong>.
     <%= link_to t('users.index.edit_profile'), edit_user_registration_path, class: 'navbar-link' %> |
