@@ -1,15 +1,7 @@
-<div class="stats">
-  <a href="<%= followings_user_path(@user) %>">
-    <strong id="followings" class="stat">
-      <%= @user.followings.count %>
-    </strong>
-    <%= t('views.common.following') %>
-  </a>
-  <a href="<%= followers_user_path(@user) %>">
-    <strong id="followers" class="stat">
-      <%= @user.followers.count %>
-    </strong>
-    <%= t('views.common.followers') %>
-  </a>
 <% user ||= current_user %>
+<div>
+  <%= user.followings.count %>
+  <%= link_to t('views.common.following'), followings_user_path(user) %>
+  <%= user.followers.count %>
+  <%= link_to t('views.common.followers'), followers_user_path(user) %>
 </div>
