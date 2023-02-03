@@ -3,6 +3,6 @@
 class Users::RegistrationsController < Devise::RegistrationsController
   def update
     super
-    resource.avatar.attach(account_update_params[:avatar]) if account_update_params[:avatar].present?
+    resource.avatar.attach(params[:avatar])
   end
 end
