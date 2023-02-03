@@ -1,0 +1,22 @@
+<h1><%= (t 'users.index.users_page', name: @user.email) %></h1>
+<p>
+  <strong><%= User.human_attribute_name(:email) %>:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong><%= User.human_attribute_name(:postal_code) %>:</strong>
+  <%= @user.postal_code %>
+</p>
+
+<p>
+  <strong><%= User.human_attribute_name(:address) %>:</strong>
+  <%= @user.address %>
+</p>
+
+<p>
+  <strong><%= User.human_attribute_name(:profile) %>:</strong>
+  <%= @user.profile %>
+</p>
+
+<%= link_to t('views.common.back'), users_path %>
