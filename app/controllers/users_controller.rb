@@ -17,7 +17,7 @@ class UsersController < ApplicationController
 
   def followers
     @user  = User.find(params[:id])
-    @users = @user.followers.page(params[:page])
+    @users = @user.followers.with_attached_avatar.page(params[:page])
     render 'followers_list'
   end
 end
