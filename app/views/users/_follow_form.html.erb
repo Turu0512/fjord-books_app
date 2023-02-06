@@ -1,6 +1,6 @@
 <% unless current_user == user %>
-  <div id="follow_form">
-  <% if current_user.followings.find_by(id: user.id) %>
+  <div>
+  <% if @follow_relationsihp %>
     <%= render partial: 'unfollow', locals: { user: user } %>
   <% else %>
     <%= render partial: 'follow', locals: { user: user } %>
