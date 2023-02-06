@@ -35,7 +35,7 @@
 
 <section>
   <%= render partial: 'devise/shared/stats', locals: { user: @user } %>
-  <%= render 'follow_form' %>
+  <%= render partial: 'follow_form', locals: { user: @user }%>
 </section>
 
 <% if current_user == @user %>
