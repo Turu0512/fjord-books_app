@@ -13,7 +13,7 @@ class User < ApplicationRecord
 
   # ユーザーをフォローする
   def follow(other_user)
-    followings << other_user unless followings.include?(other_user)
+    followings << other_user
   end
 
   # ユーザーをフォロー解除する
