@@ -10,4 +10,10 @@ Rails.application.routes.draw do
       resources :followers, only: [:index]
     end
   end
+  resources :books do
+    resources :comments, controller: :book_comments,only: :create
+  end
+  resources :reports do
+    resources :comments, controller: :report_comments, only: :create
+  end
 end

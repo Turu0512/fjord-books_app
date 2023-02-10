@@ -145,6 +145,7 @@ ja:
       create: 登録する
       submit: 保存する
       update: 更新する
+      add_comment: コメントする
   number:
     currency:
       format:
@@ -218,6 +219,7 @@ ja:
       title_show: "%{name}の詳細"
       sign_out: ログアウト
       minimum_length: "%{length}文字以上"
+      not_item: "%{name}はありません"
     pagination:
       first: '最初'
       last: '最後'
@@ -234,6 +236,7 @@ ja:
       followers: "%{count} フォロワー"
       create: フォローする
       destroy: フォロー解除する
+      not_found: 退会済み
     followings:
       index:
         title: フォロー
@@ -245,6 +248,7 @@ ja:
       notice_create: "%{name}が作成されました。"
       notice_update: "%{name}が更新されました。"
       notice_destroy: "%{name}が削除されました。"
+      content_nil: "%{name}を入力してください。"
   relationships:
     create:
       notice: "フォローしました。"

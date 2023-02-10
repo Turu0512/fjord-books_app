@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Book < ApplicationRecord
-  mount_uploader :picture, PictureUploader
+class Report < ApplicationRecord
+  belongs_to :contributor, class_name: 'User'
   has_many :comments, as: :comment, dependent: :destroy
 end
