@@ -236,6 +236,7 @@ ja:
       followers: "%{count} フォロワー"
       create: フォローする
       destroy: フォロー解除する
+      not_found: 退会済み
     followings:
       index:
         title: フォロー
