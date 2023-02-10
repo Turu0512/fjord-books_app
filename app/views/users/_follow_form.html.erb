@@ -1,7 +1,7 @@
 <% unless current_user == user %>
   <div>
-  <% if @follow_relationsihp %>
     <%= render partial: 'unfollow', locals: { user: user } %>
+  <% if @follow_relationsihp.new_record? %>
   <% else %>
     <%= render partial: 'follow', locals: { user: user } %>
   <% end %>
