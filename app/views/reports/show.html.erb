@@ -14,7 +14,7 @@
 </p>
 
 <%= render partial:'comments/comments', locals: { comments: @comments } %>
-<%= render partial:'comments/form', locals: { comment_to: @report, comment: @comment, url: report_comments_path(@report, @comment) } %>
+<%= render partial:'comments/form', locals: { comment_target: @report } %>
 
 <% if @report.contributor == current_user %>
 <%= link_to t('views.common.edit'), edit_report_path(@report) %> |
