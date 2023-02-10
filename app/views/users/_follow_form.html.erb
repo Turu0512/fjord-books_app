@@ -1,9 +1,9 @@
 <% unless current_user == user %>
   <div>
   <% if @follow_relationsihp.new_record? %>
-    <%= render partial: 'follow', locals: { active_relationships:@follow_relationsihp, user: user } %>
+    <%= render partial: 'follow', locals: { active_relationship:@follow_relationsihp, user: user } %>
   <% else %>
-    <%= render partial: 'unfollow', locals: { active_relationships:@follow_relationsihp, user: user } %>
+    <%= render partial: 'unfollow', locals: { active_relationship:@follow_relationsihp, user: user } %>
   <% end %>
   </div>
 <% end %>
