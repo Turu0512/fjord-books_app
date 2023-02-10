@@ -12,13 +12,11 @@ class UsersController < ApplicationController
   end
 
   def followings
-    @users = @user.followings.page(params[:page])
-    render 'following_list'
+    @users = @user.followings.with_attached_avatar.page(params[:page])
   end
 
   def followers
     @users = @user.followers.with_attached_avatar.page(params[:page])
-    render 'followers_list'
   end
 
   private
