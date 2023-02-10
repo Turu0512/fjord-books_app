@@ -1,0 +1,7 @@
+<% user ||= current_user %>
+<div>
+  <%= user.followings.count %>
+  <%= link_to t('views.common.following'), followings_user_path(user) %>
+  <%= user.followers.count %>
+  <%= link_to t('views.common.followers'), followers_user_path(user) %>
+</div>
