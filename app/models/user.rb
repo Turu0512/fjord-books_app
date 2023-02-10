@@ -14,7 +14,7 @@ class User < ApplicationRecord
 
   has_many :report, foreign_key: :contributor_id, dependent: :destroy, inverse_of: :contributor
 
-  has_many :comments, as: :comment, dependent: :nullify
+  has_many :comments, dependent: :nullify
 
   def following?(user)
     active_relationships.where(following_id: user.id).exists?
